@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link href="TodoList.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="todo_list" id="todo_list">
+        <div class="todo_list_details todo_list_title">
+            <p>Những việc cần làm</p>
+        </div>
+
+        <div class="todo_list_details todo_list_input">
+            <textarea id="input_content" name="input_content" class="todo_list_input_details" rows="4"></textarea>
+
+            <input type="date" id="input_content_time" name="input_content_time" class="todo_list_input_details" />
+            <button type="button" id="button_submit" class="btn todo_list_input_details" onclick="submit()">Thêm</button>
+
+        </div>
+
+        <div class="todo_list_details todo_list_content">
+            <div class="content_group" id="content_group_default">
+                <div class="content_group_details"> Nội dung</div>
+                <div class="content_group_time">Ngày làm</div>
+                <div class="content_group_add_time">Ngày tạo</div>
+                <div class="content_group_option">
+                    Tùy chọn
+                </div>
+            </div>
+            <div id="todo_list_content">
+            </div>
+        </div>
+        <div id="test"></div>
+    </div>
+    <div class="todo_list_details todo_list_input" id="form_update">
+        <h4>Cập nhật</h4>
+        <textarea id="input_content_update" name="input_content" class="todo_list_input_details" rows="4"></textarea>
+
+        <input type="date" id="input_content_time_update" name="input_content_time" class="todo_list_input_details" />
+        <button type="button" id="button_submit_update" class="btn todo_list_input_details">Cập nhật</button>
+        <button type="button" id="button_submit_close" class="btn todo_list_input_details" onclick="closeUpdate()">Hủy</button>
+    </div>
+    <script src="TodoList.js"></script>
+</body>
+
+</html>

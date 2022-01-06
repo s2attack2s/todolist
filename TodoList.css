@@ -1,0 +1,93 @@
+.todo_list {
+    max-width: 700px;
+    margin: auto;
+}
+
+.todo_list .todo_list_details {
+    width: 100%;
+    margin: 20px 0;
+}
+
+.todo_list .todo_list_title {
+    text-align: center;
+}
+
+.todo_list_input .todo_list_input_details {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px 0;
+}
+
+.todo_list_input input {
+    width: calc(100% - 80px);
+}
+
+.content_group {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+    padding: 10px 0;
+}
+
+#todo_list_content {
+    overflow: auto;
+    max-height: 500px;
+}
+
+#input_content {
+    width: 100%;
+    margin: 10px 0;
+    height: 100px !important;
+    padding: 10px;
+}
+
+.content_group input,
+.content_group div {
+    display: inline-block;
+}
+
+.content_group .content_group_time,
+.content_group .content_group_add_time {
+    width: 85px;
+}
+
+.content_group input {
+    width: 50px;
+}
+
+.content_group .content_group_option {
+    width: 100px;
+}
+
+.content_group .content_group_details {
+    width: calc(100% - 400px);
+    text-align: justify;
+}
+
+.edit {
+    margin: 0 5px;
+    background-color: yellow;
+}
+
+.delete {
+    background-color: red;
+}
+
+.btn {
+    padding: 5px;
+}
+
+#button_submit {
+    color: #fff;
+    background: #198754;
+}
+
+#form_update {
+    display: none;
+    flex-wrap: wrap;
+    top: 10px;
+    background: #fff;
+    padding: 11px;
+    max-width: 700px;
+    margin: auto;
+}
