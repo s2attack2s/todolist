@@ -30,7 +30,10 @@ if (typeof(Storage) !== 'undefined') {
         }
     ]
     var listData = JSON.parse(localStorage.getItem("dataArray"));
-    localStorage.setItem('dataArray', JSON.stringify(dataArray));
+    if (listData == null) {
+        localStorage.setItem('dataArray', JSON.stringify(dataArray));
+        window.location.reload();
+    }
     var submit = () => {
         if (input_content) {
 
