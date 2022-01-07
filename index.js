@@ -30,7 +30,7 @@ if (typeof(Storage) !== 'undefined') {
         }
     ]
     var listData = JSON.parse(localStorage.getItem("dataArray"));
-    //thêm mới ghi chú
+    localStorage.setItem('dataArray', JSON.stringify(dataArray));
     var submit = () => {
         if (input_content) {
 
